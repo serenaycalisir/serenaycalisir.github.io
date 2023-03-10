@@ -1,7 +1,8 @@
-head {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+
+h1 {
+    font-family:  'Courier New', Courier, monospace;
   }
+
   strong {
     color: rebeccapurple;
   }
