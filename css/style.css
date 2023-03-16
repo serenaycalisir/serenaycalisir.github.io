@@ -1,14 +1,91 @@
 
 h1 {
-    font-family:  'Courier New', Courier, monospace;
-  }
+  font-family:  'Courier New', Courier, monospace;
+}
 
-  strong {
-    color: rebeccapurple;
-  }
-  .center {
-    margin-left: auto;
-    margin-right: auto;
-  }
- 
-  
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+html,body{
+margin:0;
+height:100%;
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.header{
+position:relative;
+overflow:hidden;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+align-content: flex-start;
+height:50vw;
+min-height:500px;
+max-height:550px;
+min-width:300px;
+color:#adcaba;
+}
+
+.header:before{
+content:"";
+width:100%;
+height:200%;
+position:absolute;
+top:0;
+left:0;
+transform: translateZ(0);
+background-image: url("https://img.freepik.com/free-vector/forest-leaf-frame_53876-91107.jpg?w=1060&t=st=1678956426~exp=1678957026~hmac=79bddcb926c795040b44afdfd1d30d713459931590bba50755eed8741d12f9b6");
+background-size:100%;
+z-index:-2
+}
+.header a{
+color:#bcd3c8
+}
+
+
+.logo{
+border:2px solid #7ba283;
+border-radius:3px;
+text-decoration:none;
+display:inline-flex;
+align-items:center;
+align-content:center;
+margin:20px;
+padding:0px 10px;
+font-weight:900;
+font-size:1.1em;
+line-height:1;
+box-sizing:border-box;
+height:40px
+}
+.sides, .info{
+flex: 0 0 auto;
+width:50%
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  background-color: rgb(14, 37, 26);
+}
+.footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
