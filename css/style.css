@@ -16,6 +16,7 @@ font-family: 'Josefin Sans', sans-serif;
 }
 
 .header{
+background-image: url("/image/pink.JPG");
 position:relative;
 overflow:hidden;
 display:flex;
@@ -27,7 +28,7 @@ height:50vw;
 min-height:500px;
 max-height:550px;
 min-width:300px;
-color:#adcaba;
+color:#bb86be;
 }
 
 .header:before{
@@ -38,17 +39,15 @@ position:absolute;
 top:0;
 left:0;
 transform: translateZ(0);
-background-image: url("https://img.freepik.com/free-vector/forest-leaf-frame_53876-91107.jpg?w=1060&t=st=1678956426~exp=1678957026~hmac=79bddcb926c795040b44afdfd1d30d713459931590bba50755eed8741d12f9b6");
-background-size:100%;
 z-index:-2
 }
 .header a{
-color:#bcd3c8
+color:#212021
 }
 
 
 .logo{
-border:2px solid #7ba283;
+border:2px solid #000000;
 border-radius:3px;
 text-decoration:none;
 display:inline-flex;
@@ -74,12 +73,12 @@ width:50%
   align-items: center;
   flex-direction: column;
   height: 150px;
-  background-color: rgb(14, 37, 26);
+  background-color: rgb(82, 66, 81);
+  padding: 5px 0;
 }
-.footer .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer_icons {
+  width: 40px;
+  padding: 0 20px;
 }
 
 
