@@ -1,7 +1,3 @@
-function Tikla(){
-    alert("Kod dosyasından çalıştı.");
-}
-
 function buton(){
     alert("Websiteme Hoşgeldiniz");
 }
@@ -15,3 +11,19 @@ function medium(){
 
     element.style.color = "purple";
 }
+
+function myFunction() {
+    var at = document.getElementById("email").value.indexOf("@");
+
+    submitOK = "true";
+
+  
+    if (at == -1) {
+      alert("Not a valid e-mail!");
+      submitOK = "false";
+    }
+  
+    if (submitOK == "false") {
+      return false;
+    }
+  }
