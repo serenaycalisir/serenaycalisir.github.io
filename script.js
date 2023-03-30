@@ -19,7 +19,7 @@ function myFunction() {
 
   
     if (at == -1) {
-      alert("Not a valid e-mail!");
+      alert("Geçerli Değil!");
       submitOK = "false";
     }
   
