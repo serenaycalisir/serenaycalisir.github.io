@@ -4,7 +4,24 @@
 
     <title>Serenay Çalışır</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script> 
   </head>
+
+  <style>
+    #button {
+      background-color: rgb(120, 90, 111);
+      color: white;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
 
 
   <body>
@@ -23,8 +40,42 @@
 
 
     <section class="content">
-      <p><center>Hoşgeldiniz</center></p>
 
+      <center>
+      <p id="p1">Websiteme Hoşgeldiniz</p>
+      <div class="container">
+        <button id= "button"onclick="buton()">Tıklayınız</button>
+      </div>
+      <br>
+   
+      <div class="container">
+          <button id= "button"onclick="RenkDegistir()">Renk Değiştir</button>
+      </div>    
+      <br>
+      <div class="container">
+        <button id= "button" onclick="medium()">Medium Hesabımı Görmek için Tıklayın</button>
+    </div> 
+    <br>
+
+    </center>
+      <script>
+        function Tikla() {
+            alert("Butona tıklandı.");
+        }       
+  
+        function RenkDegistir() {
+            var element = document.getElementById("p1");
+  
+            element.style.color = "purple";
+        }               
+  
+      function buton(){
+            alert("Websiteme Hoşgeldiniz");
+}
+      function medium(){
+        window.location.href = "https://medium.com/@serenaycalisir";
+      }
+</script>
       </section>
       <div class="body"></div>
       <div class="footer">
