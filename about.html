@@ -10,23 +10,63 @@
 
 
   <body>
-
     <div class="header">
       <div class="sides">
         <a href="index.html" class="logo">Home</a>
         <a href="contact.html" class="logo">Contact</a>
-      </div>
-      <div class="main">
-            <h1>Eğitim Bilgileri</h1>
-      </div>
-      <div class="grid-container">
-        <div class="grid-item">Marmara Üniversitesi (2020-2024)<br>Bilgisayar Mühendisliği - Çift Anadal Programı</br></div>
-        <div class="grid-item">Marmara Üniversitesi (2019-2024)<br>Mekatronik Mühendisliği</br></div>
-        <div class="grid-item">Haydarpaşa Lisesi (2015-2019)</div>
-      </div>
-      </div>
 
+      </div>
+      <div id="p1" class="main">
+        <h1>Eğitim Bilgileri</h1><br>
+        <div class="logo">
+          <button id= "button"onclick="RenkDegistir()">Renk Değiştir</button>
+      </div>   
+  </div>
 
+  <script>      
+  
+    function RenkDegistir() {
+        var element = document.getElementById("p1");
 
+        element.style.color = "purple";
+    }
+    </script>
+    <div class="container">
+      <div  class="row">
+          <div class="col-md-12">
+              <div class="main-timeline">
+                  <div class="timeline">
+                      <div class="timeline-content">
+                          <div id="p1"class="timeline-year">2020</div>
+                          <h3 class="title">MARMARA ÜNİVERSİTESİ</h3>
+                          <p class="description">
+                          Bilgisayar Mühendisliği<br>Çift Anadal Programı</br></p>
+                          
+                          </div>
+                  </div>
+                  <div class="timeline">
+                      <div class="timeline-content">
+                          <div class="timeline-year">2019</div>
+                          <h3 class="title">MARMARA ÜNİVERSİTESİ</h3>
+                          <p class="description">
+                          Mekatronik Mühendisliği</p>
+                          </div>
+                  </div>
+                  <div class="timeline">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2015</div>
+                        <h3 class="title">HAYDARPAŞA LİSESİ</h3>
+                        <p class="description">
+                           <p></p>
+                           <p>                                                                                                                                                                                                    </p>
+                        </p>
+                      </div>
+                </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
   </body>
 </html>
