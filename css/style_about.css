@@ -1,21 +1,88 @@
 
-h1 ,p{
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  
-  .center {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
-  html,body{
-  margin:0;
-  height:100%;
-  font-family: 'Josefin Sans', sans-serif;
-  
-  }
-  
-  .header{
+.main-timeline{   font-family: 'Josefin Sans', sans-serif; }
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main-timeline .timeline{
+    width: calc(50% + 58px);
+    border-top: 3px solid #212224;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline:before{
+    content: "";
+    background: #0d0c0d;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+.main-timeline .timeline-content{
+    color: #0d0c0d;
+    text-align: center;
+    padding: 15px 80px 15px 10px;
+    display: block;
+    position: relative;
+}
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-content:before{
+    content: "";
+    background: #771e8f;
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+.main-timeline .timeline-year{
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    transform: translateY(-50%) rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: -15px;
+}
+.main-timeline .title{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+.main-timeline .description{
+    font-size: 18px;
+    margin: 0;
+}
+.main-timeline .timeline:nth-child(even){ float: right; }
+.main-timeline .timeline:nth-child(even):before{
+    right: auto;
+    left: 0;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content{
+    padding: 15px 10px 15px 80px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-content:before{
+    right: auto;
+    left: 51px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-year{
+    right: auto;
+    left: -15px;
+}
+.main-timeline .timeline:nth-child(4n+2) .timeline-content:before{ background: #421358; }
+.main-timeline .timeline:nth-child(4n+3) .timeline-content:before{ background: #162e1c; }
+.main-timeline .timeline:nth-child(4n+4) .timeline-content:before{ background: #bdc203; }
+@media screen and (max-width:767px){
+    .main-timeline .timeline{ width: 100%; }
+}
+
+.header{
   background-image: url("/image/dag2.jpg");
   position:relative;
   overflow:hidden;
@@ -28,7 +95,7 @@ h1 ,p{
   min-height:800px;
   max-height:650px;
   min-width:500px;
-  color:#030203;
+  color:#0d0c0d;
   }
   
   .sides{
@@ -36,8 +103,7 @@ h1 ,p{
     width:50%
     
   }
-  
-  
+
   .main{
     width:100%;
     padding:0% 10% 0 10%;
@@ -54,50 +120,37 @@ h1 ,p{
   z-index:-2
   }
   .header a{
-  color:#212021
+  color:#0d0c0d
+  }
+
+  h1 ,p{
+    font-family: 'Josefin Sans', sans-serif;
   }
   
-  h1 {
-      font-size: 50px;
-      margin-bottom: 30px;
+  .center {
+    margin-left: auto;
+    margin-right: auto;
   }
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+  html,body{
+  margin:0;
+  height:100%;
+  font-family: 'Josefin Sans', sans-serif;
   
+  }
   .logo{
-  border:2px solid #000000;
-  border-radius:3px;
-  text-decoration:none;
-  display:inline-flex;
-  align-items:center;
-  align-content:center;
-  margin:20px;
-  padding:0px 10px;
-  font-weight:900;
-  font-size:1.1em;
-  line-height:1;
-  box-sizing:border-box;
-  height:40px
-  }
-  
-  
-  
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 150px;
-    background-color: rgb(82, 66, 81);
-    padding: 5px 0;
-  }
-  .footer_icons {
-    width: 40px;
-    padding: 0 20px;
-  }
-  
-  
-  .grid-container {
-    display: grid;
-    font-size: 30px;
-    margin-bottom: 30px;
-    grid-template-rows: 100px 100px;
-  }
+    border:2px solid #000000;
+    border-radius:3px;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    align-content:center;
+    margin:20px;
+    padding:0px 10px;
+    font-weight:900;
+    font-size:1.1em;
+    line-height:1;
+    box-sizing:border-box;
+    height:40px
+    }
+    
