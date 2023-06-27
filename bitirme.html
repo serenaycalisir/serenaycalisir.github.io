@@ -114,12 +114,13 @@
 
     var qrData = markers.map(function(marker) {
         return marker.getPosition().lat().toFixed(6) + ',' + marker.getPosition().lng().toFixed(6);
-    }).join(',');
+    }).join('\n');  // Virgül yerine yeni satır karakteri ('\n') kullanarak alt alta yazdırma
 
     var qrCodeWindow = window.open("", "_blank");
-    qrCodeWindow.document.write("<html><head><title>QR Code</title><style>img { max-width: 100%; height: auto; }</style></head><body><img src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(qrData) + "'></body></html>");
+    qrCodeWindow.document.write("<html><head><title>QR Code</title><style>img { max-width: 100%; height: auto; }</style></head><body><pre>" + qrData + "</pre><img src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(qrData) + "'></body></html>");
     qrCodeWindow.document.close();
 }
+
 
     </script>
 </head>
